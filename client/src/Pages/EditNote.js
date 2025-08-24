@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "../api";
+import api from "../api";   // 👈 axios की जगह api.js
 import { useNavigate, useParams } from "react-router-dom";
 
 function EditNote() {
@@ -11,9 +11,10 @@ function EditNote() {
     const fetchNote = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get(`http://localhost:5000/api/notes`, {
+        const res = await api.get("/notes", {
           headers: { Authorization: `Bearer ${token}` }
         });
+
         const found = res.data.find((n) => n._id === id);
         if (found) {
           setNote({ title: found.title, content: found.content });
@@ -38,7 +39,7 @@ function EditNote() {
     e.preventDefault();
     try {
       const token = localStorage.getItem("token");
-      await axios.put(`http://localhost:5000/api/notes/${id}`, note, {
+      await api.put(`/notes/${id}`, note, {
         headers: { Authorization: `Bearer ${token}` }
       });
       alert("Note updated!");
