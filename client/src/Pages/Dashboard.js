@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "../api";
+import axios from "../api";  // yaha se baseURL use hoga
 import { useNavigate, Link } from "react-router-dom";
 
 function Dashboard({ darkMode }) {
@@ -16,7 +16,8 @@ function Dashboard({ darkMode }) {
           return;
         }
 
-        const res = await axios.get("http://localhost:5000/api/notes", {
+        // ✅ direct /notes likho, baseURL api.js handle karega
+        const res = await axios.get("/notes", {
           headers: { Authorization: `Bearer ${token}` }
         });
         setNotes(res.data);
@@ -34,7 +35,7 @@ function Dashboard({ darkMode }) {
     if (window.confirm("Are you sure you want to delete this note?")) {
       try {
         const token = localStorage.getItem("token");
-        await axios.delete(`http://localhost:5000/api/notes/${id}`, {
+        await axios.delete(`/notes/${id}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
         setNotes(prev => prev.filter(note => note._id !== id));
