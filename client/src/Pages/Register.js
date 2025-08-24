@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "../api";
+import api from "../api";   // 👈 axios की जगह api.js use
 import { useNavigate } from "react-router-dom";
 
 function Register() {
@@ -17,7 +17,9 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/users/register", formData);
+      // 👇 अब सिर्फ relative endpoint दो
+      const res = await api.post("/users/register", formData);
+
       alert(res.data.msg);
       navigate("/login");
     } catch (err) {
