@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import api from "../api";   // 👈 axios की जगह api.js use
+import api from "../api";   // 👈 axios instance with baseURL
 import { useNavigate } from "react-router-dom";
 
 function Register() {
@@ -17,14 +17,14 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // 👇 अब सिर्फ relative endpoint दो
+      // 👇 bas relative path dena hai, api.js handle karega baseURL
       const res = await api.post("/api/users/register", formData);
 
-      alert(res.data.msg);
+      alert(res.data.msg || "Registration successful!");
       navigate("/login");
     } catch (err) {
-      console.error(err);
-      alert("Error registering user");
+      console.error("Register error:", err.response?.data || err.message);
+      alert(err.response?.data?.msg || "Error registering user");
     }
   };
 
