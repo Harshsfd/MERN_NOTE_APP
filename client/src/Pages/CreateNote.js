@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "../api";
+import api from "../api"; // axios instance
 import { useNavigate } from "react-router-dom";
 
 function CreateNote() {
@@ -17,8 +17,7 @@ function CreateNote() {
     e.preventDefault();
     try {
       const token = localStorage.getItem("token");
-      // ✅ baseURL api.js se, sirf /notes use karo
-      await axios.post("/api/notes", note, {
+      await api.post("/api/notes", note, {
         headers: { Authorization: `Bearer ${token}` }
       });
       alert("Note created!");
