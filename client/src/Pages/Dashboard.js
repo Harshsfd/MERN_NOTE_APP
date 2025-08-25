@@ -17,7 +17,7 @@ function Dashboard({ darkMode }) {
         }
 
         // ✅ direct /notes likho, baseURL api.js handle karega
-        const res = await axios.get("/notes", {
+        const res = await axios.get("/api/notes", {
           headers: { Authorization: `Bearer ${token}` }
         });
         setNotes(res.data);
