@@ -17,7 +17,7 @@ function Login() {
     e.preventDefault();
     try {
       // 👇 अब सिर्फ relative endpoint दो
-      const res = await api.post("/users/login", formData);
+      const res = await api.post("/api/users/login", formData);
 
       localStorage.setItem("token", res.data.token);
       alert("Login successful!");
