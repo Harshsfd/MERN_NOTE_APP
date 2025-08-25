@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import api from "../api";   // 👈 axios की जगह api.js
+import api from "../api";
 import { useNavigate, useParams } from "react-router-dom";
 
 function EditNote() {
@@ -39,7 +39,7 @@ function EditNote() {
     e.preventDefault();
     try {
       const token = localStorage.getItem("token");
-      await api.put(`/notes/${id}`, note, {
+      await api.put(`/api/notes/${id}`, note, {
         headers: { Authorization: `Bearer ${token}` }
       });
       alert("Note updated!");
