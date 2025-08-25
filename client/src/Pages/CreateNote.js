@@ -18,7 +18,7 @@ function CreateNote() {
     try {
       const token = localStorage.getItem("token");
       // ✅ baseURL api.js se, sirf /notes use karo
-      await axios.post("/notes", note, {
+      await axios.post("/api/notes", note, {
         headers: { Authorization: `Bearer ${token}` }
       });
       alert("Note created!");
