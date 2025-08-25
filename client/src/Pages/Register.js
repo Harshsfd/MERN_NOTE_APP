@@ -18,7 +18,7 @@ function Register() {
     e.preventDefault();
     try {
       // 👇 अब सिर्फ relative endpoint दो
-      const res = await api.post("/users/register", formData);
+      const res = await api.post("/api/users/register", formData);
 
       alert(res.data.msg);
       navigate("/login");
