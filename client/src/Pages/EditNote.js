@@ -11,7 +11,7 @@ function EditNote() {
     const fetchNote = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await api.get("/notes", {
+        const res = await api.get("/api/notes", {
           headers: { Authorization: `Bearer ${token}` }
         });
 
