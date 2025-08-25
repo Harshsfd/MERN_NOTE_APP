@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import api from "../api";  // 👈 यहाँ axios की जगह api.js से import
+import api from "../api";  // 👈 axios instance with baseURL
 import { useNavigate } from "react-router-dom";
 
 function Login() {
@@ -16,15 +16,16 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // 👇 अब सिर्फ relative endpoint दो
       const res = await api.post("/api/users/login", formData);
 
+      // 👇 token save for authentication
       localStorage.setItem("token", res.data.token);
+
       alert("Login successful!");
       navigate("/dashboard");
     } catch (err) {
-      console.error(err);
-      alert("Invalid credentials");
+      console.error("Login error:", err.response?.data || err.message);
+      alert(err.response?.data?.msg || "Invalid credentials");
     }
   };
 
