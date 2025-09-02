@@ -55,7 +55,7 @@ Clone the repository:
 git clone https://github.com/Harshsfd/mern-note-app.git
 cd mern-note-app
 
-🔹 Backend Setup
+## 🔹 Backend Setup
 
 cd server
 npm install
@@ -70,7 +70,7 @@ Run server:
 
 npm start
 
-🔹 Frontend Setup
+## 🔹 Frontend Setup
 
 cd client
 npm install
@@ -85,7 +85,7 @@ npm start
 
 
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome!
 
@@ -105,14 +105,14 @@ Contributions are welcome!
 
 ---
 
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License.
 
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Harsh Bhardwaj
 
