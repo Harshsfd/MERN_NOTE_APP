@@ -14,6 +14,8 @@
 **MERN Note App** is a full-stack web application that allows users to securely **sign up, log in, and manage personal notes**.  
 Built using the **MERN stack**, it demonstrates authentication, CRUD operations, and deployment in production environments.  
 
+🔗 **Live Demo:** [MERN Note App](https://mern-note-app-cyan.vercel.app/)  
+
 ---
 
 ## ✨ Features  
@@ -104,13 +106,17 @@ Database: MongoDB Atlas
 
 Contributions are welcome!
 
-Fork the repo
+1. Fork the repo
 
-Create a new branch (feature-xyz)
 
-Commit your changes
+2. Create a new branch (feature-xyz)
 
-Open a Pull Request 🎉
+
+3. Commit your changes
+
+
+4. Open a Pull Request 🎉
+
 
 
 
