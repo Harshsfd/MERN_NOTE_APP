@@ -20,17 +20,20 @@ Users can **sign up, log in, and manage notes** with authentication and CRUD ope
 
 ---
 
+
 ## ✨ Features
 
-✅ 👤 **User Authentication** (Signup & Login with JWT)
-✅ 🔒 **Protected Routes** (only for authorized users)
-✅ 📝 **CRUD Notes** (Create, Read, Update, Delete)
-✅ 🔐 **Secure Passwords** with bcrypt
-✅ 🌍 **CORS-enabled API** + Frontend communication
-✅ 📱 **Responsive UI** (Mobile + Desktop Friendly)
-✅ 🚀 **Deployment ready** (Vercel + Render + MongoDB Atlas)
+* 👤 **User Authentication** – Secure Signup & Login using **JWT**
+* 🔒 **Protected Routes** – Access allowed only for **authorized users**
+* 📝 **Notes Management** – **Create, Read, Update & Delete** personal notes
+* 🔐 **Password Security** – All passwords hashed with **bcrypt**
+* 🌍 **Cross-Origin Support** – Smooth **Frontend ↔ Backend** communication
+* 📱 **Responsive Design** – Works perfectly on **Mobile + Desktop**
+* 🚀 **Deployment Ready** – Hosted on **Vercel + Render + MongoDB Atlas**
+* ⚡ **Fast & Lightweight** – Optimized API + UI for quick response
 
 ---
+
 
 ## 🛠️ Tech Stack
 
