@@ -1,81 +1,52 @@
-# 📝 MERN Note App
+📝 MERN Note App
+MERN React Express MongoDB JWT
 
-<p align="center">
-  <img src="https://img.shields.io/badge/MERN-Stack-green?style=for-the-badge&logo=mongodb" alt="MERN"/>
-  <img src="https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react" alt="React"/>
-  <img src="https://img.shields.io/badge/Backend-Express-lightgrey?style=for-the-badge&logo=node.js" alt="Express"/>
-  <img src="https://img.shields.io/badge/Database-MongoDB-brightgreen?style=for-the-badge&logo=mongodb" alt="MongoDB"/>
-  <img src="https://img.shields.io/badge/Auth-JWT-orange?style=for-the-badge&logo=jsonwebtokens" alt="JWT"/>
-</p>
-
-**A secure, responsive note-taking web application built with the MERN stack.**  
+A secure, responsive note-taking web application built with the MERN stack.
 Users can register/login and perform full CRUD operations on personal notes. Focus on simplicity, security (JWT), and deployability.
 
----
+🔗 Quick links
+Repository: https://github.com/Harshsfd/mern-note-app
+Live Demo: https://mern-note-app-cyan.vercel.app/ (replace / update if needed)
+📋 Table of Contents
+Features
+Tech Stack
+Project Structure
+Prerequisites
+Installation — Quick Start
+Backend — Setup & Run
+Frontend — Setup & Run
+API Endpoints
+Deployment (Production)
+Environment & Security Notes
+Screenshots
+Contributing
+Roadmap / Future Improvements
+License & Author
+✨ Features
+✅ User registration & login (JWT authentication)
+✅ Create, Read, Update, Delete notes (only by owner)
+✅ Password hashing with bcrypt
+✅ Protected API routes using JWT
+✅ Clean & responsive React front-end
+✅ CORS-enabled backend for SPA usage
+✅ Easy deployment to Vercel / Render / MongoDB Atlas
+🛠️ Tech Stack
+Frontend: React, Axios, React Router
+Backend: Node.js, Express
+Database: MongoDB (Atlas recommended)
+Auth: JSON Web Tokens (JWT), bcrypt
+Dev Tools: nodemon (development), dotenv
+Hosting: Vercel (frontend), Render / Heroku (backend), MongoDB Atlas (DB)
+📂 Project Structure
+mern-note-app/ ├─ client/ # React app (frontend) │ ├─ public/ │ └─ src/ ├─ server/ # Express app (backend) │ ├─ controllers/ │ ├─ middleware/ │ ├─ models/ │ ├─ routes/ │ └─ server.js (or app.js) ├─ .gitignore ├─ README.md └─ LICENSE
 
-## 🔗 Quick links
-- Repository: https://github.com/Harshsfd/mern-note-app  
-- Live Demo: https://mern-note-app-cyan.vercel.app/ (replace / update if needed)
-
----
-
-## 📋 Table of Contents
-1. [Features](#-features)  
-2. [Tech Stack](#-tech-stack)  
-3. [Project Structure](#-project-structure)  
-4. [Prerequisites](#-prerequisites)  
-5. [Installation — Quick Start](#-installation--quick-start)  
-6. [Backend — Setup & Run](#-backend--setup--run)  
-7. [Frontend — Setup & Run](#-frontend--setup--run)  
-8. [API Endpoints](#-api-endpoints)  
-9. [Deployment (Production)](#-deployment-production)  
-10. [Environment & Security Notes](#-environment--security-notes)  
-11. [Screenshots](#-screenshots)  
-12. [Contributing](#-contributing)  
-13. [Roadmap / Future Improvements](#-roadmap--future-improvements)  
-14. [License & Author](#-license--author)
-
----
-
-## ✨ Features
-- ✅ User registration & login (JWT authentication)  
-- ✅ Create, Read, Update, Delete notes (only by owner)  
-- ✅ Password hashing with **bcrypt**  
-- ✅ Protected API routes using JWT  
-- ✅ Clean & responsive React front-end  
-- ✅ CORS-enabled backend for SPA usage  
-- ✅ Easy deployment to Vercel / Render / MongoDB Atlas
-
----
-
-## 🛠️ Tech Stack
-- **Frontend:** React, Axios, React Router  
-- **Backend:** Node.js, Express  
-- **Database:** MongoDB (Atlas recommended)  
-- **Auth:** JSON Web Tokens (JWT), bcrypt  
-- **Dev Tools:** nodemon (development), dotenv  
-- **Hosting:** Vercel (frontend), Render / Heroku (backend), MongoDB Atlas (DB)
-
----
-
-## 📂 Project Structure
-
-mern-note-app/ ├─ client/                # React app (frontend) │  ├─ public/ │  └─ src/ ├─ server/                # Express app (backend) │  ├─ controllers/ │  ├─ middleware/ │  ├─ models/ │  ├─ routes/ │  └─ server.js (or app.js) ├─ .gitignore ├─ README.md └─ LICENSE
-
----
-
-## ⚙️ Prerequisites
-- Node.js (v16+ recommended) & npm  
-- MongoDB Atlas account (or local MongoDB)  
-- Git
-
----
-
-## 🚀 Installation — Quick Start
-
+⚙️ Prerequisites
+Node.js (v16+ recommended) & npm
+MongoDB Atlas account (or local MongoDB)
+Git
+🚀 Installation — Quick Start
 Clone repository and follow backend + frontend steps:
 
-```bash
 git clone https://github.com/Harshsfd/mern-note-app.git
 cd mern-note-app
 
@@ -372,6 +343,4 @@ Tell me which of the above you want next and I’ll provide the exact files/comm
 
 
 ---
-
-
 
